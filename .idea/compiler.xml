@@ -26,5 +26,9 @@
         <module name="Programs" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Programs" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
+
