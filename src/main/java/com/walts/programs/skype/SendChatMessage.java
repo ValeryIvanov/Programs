@@ -3,6 +3,9 @@ package com.walts.programs.skype;
 import com.skype.Chat;
 import com.skype.Skype;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class SendChatMessage {
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
@@ -21,8 +24,22 @@ public class SendChatMessage {
             }
         }
         if (group != null) {
-            System.out.println("Sending message = " + args[1] + " to chat id = " + group.getId());
-            group.send(args[1]);
+            if (args[1].endsWith(".txt")) {
+                BufferedReader br = new BufferedReader(new FileReader(args[1]));
+                try {
+                    String line = br.readLine();
+                    while (line != null) {
+                        System.out.println("Sending message = " + line + " to chat id = " + group.getId());
+                        group.send(line);
+                        line = br.readLine();
+                    }
+                } finally {
+                    br.close();
+                }
+            } else {
+                System.out.println("Sending message = " + args[1] + " to chat id = " + group.getId());
+                group.send(args[1]);
+            }
             System.out.println("Message sent!");
         } else {
             System.out.println("Could not find group to send message to!");

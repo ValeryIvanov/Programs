@@ -35,12 +35,12 @@
     </build>
 
     <dependencies>
-
         <dependency>
             <groupId>com.github.taksan</groupId>
             <artifactId>skype-java-api</artifactId>
             <version>1.4</version>
         </dependency>
+    </dependencies>
 
 <!--
         <dependency>
@@ -49,6 +49,5 @@
             <version>2.1.7</version>
         </dependency>
 -->
-    </dependencies>
 
 </project>

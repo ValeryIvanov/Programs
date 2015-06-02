@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1224e206-088f-48ff-a0ab-e33ed0454628" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/skype-java-api-1.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/walts/programs/GetURLContent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/walts/programs/skype/SendChatMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/walts/programs/skype/SendChatMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,84 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1003">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="File.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8415" max-vertical-offset="32810">
-              <caret line="516" column="30" selection-start-line="516" selection-start-column="30" selection-end-line="516" selection-end-column="30" />
-              <folding>
-                <element signature="e#20617#20618#0" expanded="true" />
-                <element signature="e#20649#20650#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="URL.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/net/URL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15436" max-vertical-offset="21641">
-              <caret line="944" column="26" selection-start-line="944" selection-start-column="26" selection-end-line="944" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="URLStreamHandler.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/net/URLStreamHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="9622">
-              <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BufferedWriter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/io/BufferedWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3310" max-vertical-offset="4301">
-              <caret line="223" column="16" selection-start-line="223" selection-start-column="16" selection-end-line="223" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.051829267" vertical-offset="0" max-vertical-offset="656">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14518">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Programs.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Programs.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.2957317" vertical-offset="0" max-vertical-offset="986">
+              <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -123,11 +54,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testFile.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/walts/programs/GetURLContent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/walts/programs/SendChatMessage.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -227,8 +158,30 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rxtx" />
+              <option name="myItemId" value="Programs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Programs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -603,6 +556,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32875368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -616,7 +570,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -641,6 +594,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -664,8 +619,28 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="8415" max-vertical-offset="32810">
           <caret line="516" column="30" selection-start-line="516" selection-start-column="30" selection-end-line="516" selection-end-column="30" />
           <folding>
-            <element signature="e#20617#20618#0" expanded="true" />
-            <element signature="e#20649#20650#0" expanded="true" />
+            <element signature="e#0#81343#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6516#6517#0" expanded="false" />
+            <element signature="e#6544#6545#0" expanded="false" />
+            <element signature="e#18747#18748#0" expanded="false" />
+            <element signature="e#18767#18768#0" expanded="false" />
+            <element signature="e#19358#19359#0" expanded="false" />
+            <element signature="e#19393#19394#0" expanded="false" />
+            <element signature="e#55411#55412#0" expanded="false" />
+            <element signature="e#55454#55455#0" expanded="false" />
+            <element signature="e#58385#58386#0" expanded="false" />
+            <element signature="e#58435#58436#0" expanded="false" />
+            <element signature="e#61430#61431#0" expanded="false" />
+            <element signature="e#61484#61485#0" expanded="false" />
+            <element signature="e#64701#64702#0" expanded="false" />
+            <element signature="e#64731#64732#0" expanded="false" />
+            <element signature="e#77579#77580#0" expanded="false" />
+            <element signature="e#77621#77622#0" expanded="false" />
+            <element signature="e#79264#79265#0" expanded="false" />
+            <element signature="e#79297#79298#0" expanded="false" />
+            <element signature="e#79558#79559#0" expanded="false" />
+            <element signature="e#79583#79584#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -674,7 +649,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15436" max-vertical-offset="21641">
           <caret line="944" column="26" selection-start-line="944" selection-start-column="26" selection-end-line="944" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#0#46728#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#26939#26940#0" expanded="false" />
+            <element signature="e#26960#26961#0" expanded="false" />
+            <element signature="e#27188#27189#0" expanded="false" />
+            <element signature="e#27208#27209#0" expanded="false" />
+            <element signature="e#27451#27452#0" expanded="false" />
+            <element signature="e#27475#27476#0" expanded="false" />
+            <element signature="e#27669#27670#0" expanded="false" />
+            <element signature="e#27694#27695#0" expanded="false" />
+            <element signature="e#27861#27862#0" expanded="false" />
+            <element signature="e#27881#27882#0" expanded="false" />
+            <element signature="e#28213#28214#0" expanded="false" />
+            <element signature="e#28253#28254#0" expanded="false" />
+            <element signature="e#28422#28423#0" expanded="false" />
+            <element signature="e#28446#28447#0" expanded="false" />
+            <element signature="e#28824#28825#0" expanded="false" />
+            <element signature="e#28844#28845#0" expanded="false" />
+            <element signature="e#29332#29333#0" expanded="false" />
+            <element signature="e#29352#29353#0" expanded="false" />
+            <element signature="e#29637#29638#0" expanded="false" />
+            <element signature="e#29656#29657#0" expanded="false" />
+            <element signature="e#31849#31850#0" expanded="false" />
+            <element signature="e#31901#31902#0" expanded="false" />
+            <element signature="e#32386#32387#0" expanded="false" />
+            <element signature="e#32418#32419#0" expanded="false" />
+            <element signature="e#32909#32910#0" expanded="false" />
+            <element signature="e#32953#32954#0" expanded="false" />
+            <element signature="e#46607#46608#0" expanded="false" />
+            <element signature="e#46627#46628#0" expanded="false" />
+            <element signature="e#46656#46657#0" expanded="false" />
+            <element signature="e#46677#46678#0" expanded="false" />
+            <element signature="e#46704#46705#0" expanded="false" />
+            <element signature="e#46723#46724#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -682,7 +692,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="9622">
           <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="e#0#19928#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10600#10601#0" expanded="false" />
+            <element signature="e#10625#10626#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -702,19 +717,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1003">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/net/URLStreamHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="9622">
           <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="e#0#19928#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10600#10601#0" expanded="false" />
+            <element signature="e#10625#10626#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -722,7 +734,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15192" max-vertical-offset="21607">
           <caret line="944" column="26" selection-start-line="944" selection-start-column="26" selection-end-line="944" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#0#46728#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#26939#26940#0" expanded="false" />
+            <element signature="e#26960#26961#0" expanded="false" />
+            <element signature="e#27188#27189#0" expanded="false" />
+            <element signature="e#27208#27209#0" expanded="false" />
+            <element signature="e#27451#27452#0" expanded="false" />
+            <element signature="e#27475#27476#0" expanded="false" />
+            <element signature="e#27669#27670#0" expanded="false" />
+            <element signature="e#27694#27695#0" expanded="false" />
+            <element signature="e#27861#27862#0" expanded="false" />
+            <element signature="e#27881#27882#0" expanded="false" />
+            <element signature="e#28213#28214#0" expanded="false" />
+            <element signature="e#28253#28254#0" expanded="false" />
+            <element signature="e#28422#28423#0" expanded="false" />
+            <element signature="e#28446#28447#0" expanded="false" />
+            <element signature="e#28824#28825#0" expanded="false" />
+            <element signature="e#28844#28845#0" expanded="false" />
+            <element signature="e#29332#29333#0" expanded="false" />
+            <element signature="e#29352#29353#0" expanded="false" />
+            <element signature="e#29637#29638#0" expanded="false" />
+            <element signature="e#29656#29657#0" expanded="false" />
+            <element signature="e#31849#31850#0" expanded="false" />
+            <element signature="e#31901#31902#0" expanded="false" />
+            <element signature="e#32386#32387#0" expanded="false" />
+            <element signature="e#32418#32419#0" expanded="false" />
+            <element signature="e#32909#32910#0" expanded="false" />
+            <element signature="e#32953#32954#0" expanded="false" />
+            <element signature="e#46607#46608#0" expanded="false" />
+            <element signature="e#46627#46628#0" expanded="false" />
+            <element signature="e#46656#46657#0" expanded="false" />
+            <element signature="e#46677#46678#0" expanded="false" />
+            <element signature="e#46704#46705#0" expanded="false" />
+            <element signature="e#46723#46724#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -731,8 +778,28 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="8171" max-vertical-offset="32742">
           <caret line="516" column="30" selection-start-line="516" selection-start-column="30" selection-end-line="516" selection-end-column="30" />
           <folding>
-            <element signature="e#20617#20618#0" expanded="true" />
-            <element signature="e#20649#20650#0" expanded="true" />
+            <element signature="e#0#81343#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6516#6517#0" expanded="false" />
+            <element signature="e#6544#6545#0" expanded="false" />
+            <element signature="e#18747#18748#0" expanded="false" />
+            <element signature="e#18767#18768#0" expanded="false" />
+            <element signature="e#19358#19359#0" expanded="false" />
+            <element signature="e#19393#19394#0" expanded="false" />
+            <element signature="e#55411#55412#0" expanded="false" />
+            <element signature="e#55454#55455#0" expanded="false" />
+            <element signature="e#58385#58386#0" expanded="false" />
+            <element signature="e#58435#58436#0" expanded="false" />
+            <element signature="e#61430#61431#0" expanded="false" />
+            <element signature="e#61484#61485#0" expanded="false" />
+            <element signature="e#64701#64702#0" expanded="false" />
+            <element signature="e#64731#64732#0" expanded="false" />
+            <element signature="e#77579#77580#0" expanded="false" />
+            <element signature="e#77621#77622#0" expanded="false" />
+            <element signature="e#79264#79265#0" expanded="false" />
+            <element signature="e#79297#79298#0" expanded="false" />
+            <element signature="e#79558#79559#0" expanded="false" />
+            <element signature="e#79583#79584#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -763,8 +830,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.051829267" vertical-offset="0" max-vertical-offset="656">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walts/programs/arduino/SerialTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12957317" vertical-offset="0" max-vertical-offset="1785">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walts/programs/skype/SendChatMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.103658535" vertical-offset="0" max-vertical-offset="867">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2957317" vertical-offset="0" max-vertical-offset="986">
+          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
           <folding />
         </state>
       </provider>
