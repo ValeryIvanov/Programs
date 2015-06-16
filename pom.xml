@@ -38,10 +38,20 @@
     <dependencies>
 
         <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.5.4</version>
+        </dependency>
+
+
+        <!--
+        <dependency>
             <groupId>com.github.taksan</groupId>
             <artifactId>skype-java-api</artifactId>
             <version>1.4</version>
         </dependency>
+        -->
+
 
         <!--
         <dependency>
