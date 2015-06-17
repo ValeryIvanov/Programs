@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="win64">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/src/main/resources/rxtx/win64" />
+      <root url="file://$PROJECT_DIR$/src/main/resources/rxtx/win64" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>

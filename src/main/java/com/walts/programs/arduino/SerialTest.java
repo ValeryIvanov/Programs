@@ -1,12 +1,15 @@
 package com.walts.programs.arduino;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import gnu.io.CommPortIdentifier;
 import gnu.io.SerialPort;
 import gnu.io.SerialPortEvent;
 import gnu.io.SerialPortEventListener;
+
+import java.nio.charset.Charset;
 import java.util.Enumeration;
 
 //http://playground.arduino.cc/Interfacing/Java
@@ -18,7 +21,7 @@ public class SerialTest implements SerialPortEventListener {
             "/dev/tty.usbserial-A9007UX1", // Mac OS X
             "/dev/ttyACM0", // Raspberry Pi
             "/dev/ttyUSB0", // Linux
-            "COM6", // Windows
+            "COM4", // Windows
     };
 
     private BufferedReader input;
@@ -79,6 +82,7 @@ public class SerialTest implements SerialPortEventListener {
         }
     }
 
+    @Override
     public synchronized void serialEvent(SerialPortEvent oEvent) {
         if (oEvent.getEventType() == SerialPortEvent.DATA_AVAILABLE) {
             try {
@@ -93,7 +97,7 @@ public class SerialTest implements SerialPortEventListener {
     }
 
     public static void main(String[] args) throws Exception {
-        SerialTest main = new SerialTest();
+        final SerialTest main = new SerialTest();
         main.initialize();
         Thread t = new Thread() {
             public void run() {
@@ -104,5 +108,29 @@ public class SerialTest implements SerialPortEventListener {
         };
         t.start();
         System.out.println("Started");
+
+
+        Thread r = new Thread() {
+            public void run() {
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                String s;
+                while (true) {
+                    try {
+                        System.out.print("Enter String");
+                        try {
+                            s = br.readLine();
+                            if (s != null) {
+                                main.output.write(s.getBytes(Charset.forName("UTF-8")));
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        Thread.sleep(1000);
+                    } catch (InterruptedException ie) {}
+                }
+            }
+        };
+        r.start();
+
     }
 }
