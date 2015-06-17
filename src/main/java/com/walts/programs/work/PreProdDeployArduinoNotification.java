@@ -91,23 +91,14 @@ public class PreProdDeployArduinoNotification implements SerialPortEventListener
     public static void main(String[] args) throws Exception {
         final PreProdDeployArduinoNotification main = new PreProdDeployArduinoNotification();
         main.initialize();
-        Thread t = new Thread() {
-            @Override
-            public void run() {
-                //the following line will keep this app alive for 1000 seconds,
-                //waiting for events to occur and responding to them (printing incoming messages to console).
-                try {Thread.sleep(1000000);} catch (InterruptedException ie) {}
-            }
-        };
-        t.start();
-        System.out.println("Started");
+        System.out.println("Arduino serial port started");
 
         ChatListener chatListener = new ChatListener();
         chatListener.test(main.output);
     }
 
     private static class ChatListener {
-        final String senderId = "";
+        final String senderId = ""/*"#rababarber/$kurbkala;"*/;
         final String[] messages = {"teen", "Robot is deploying"};
 
         private void test(final OutputStream outputStream) throws SkypeException {

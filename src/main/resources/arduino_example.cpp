@@ -1,8 +1,11 @@
 void setup() {
-  // initialize digital pin 13 as an output.
-  pinMode(13, OUTPUT);
-  // Initialize serial port
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+
   Serial.begin(9600);
+  
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
 }
 void loop() {
   String content = "";
@@ -13,10 +16,12 @@ void loop() {
   }
   if (content != "") {
     if (content == "HIGH") {
-      digitalWrite(13, HIGH);
+      digitalWrite(2, LOW);
+      digitalWrite(3, HIGH);
     } else {
-      digitalWrite(13, LOW);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, LOW);
     }
     Serial.println(content);
-  }
+  } 
 }
