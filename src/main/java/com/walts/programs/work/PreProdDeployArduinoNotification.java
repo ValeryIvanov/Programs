@@ -93,13 +93,16 @@ public class PreProdDeployArduinoNotification implements SerialPortEventListener
         main.initialize();
         System.out.println("Arduino serial port started");
 
+        //TODO get latest message and set LEDs according to that
+
         ChatListener chatListener = new ChatListener();
         chatListener.test(main.output);
     }
 
     private static class ChatListener {
-        final String senderId = ""/*"#rababarber/$kurbkala;"*/;
-        final String[] messages = {"teen", "Robot is deploying"};
+        final String senderId = "#rababarber/$kurbkala;";
+        final String[] startMessages = {"teen", "Robot is deploying"};
+        final String[] finishMessages = {"tehtud", "done", "Build-Time"};
 
         private void test(final OutputStream outputStream) throws SkypeException {
             System.out.println("Starting Skype chat listener...");
@@ -121,15 +124,21 @@ public class PreProdDeployArduinoNotification implements SerialPortEventListener
             System.out.println("Message received from " + chatMessage.getChat().getId() + " - " + chatMessage.getSenderId() + " - " + chatMessage.getSenderDisplayName() + ", content --> " + chatMessage.getContent());
             if (chatMessage.getType().equals(ChatMessage.Type.SAID)) {
                 if (chatMessage.getSenderId().contains(senderId) || chatMessage.getChat().getId().contains(senderId)) {
-                    for (String message : messages) {
-                        if (chatMessage.getContent().contains(message)) {
-                            System.out.println("Message " + chatMessage.getContent() + " contains " + message + ". Sending HIGH to Arduino");
+                    for (String startMessage : startMessages) {
+                        if (chatMessage.getContent().contains(startMessage)) {
+                            System.out.println("Message " + chatMessage.getContent() + " contains " + startMessage + ". Sending HIGH to Arduino");
                             writeToOutputStream(outputStream, "HIGH");
                             return;
                         }
                     }
-                    System.out.println("Message "+ chatMessage.getContent() + " did not contain deploy starting message. Sending LOW to Arduino");
-                    writeToOutputStream(outputStream, "LOW");
+                    for (String finishMessage : finishMessages) {
+                        if (chatMessage.getContent().contains(finishMessage)) {
+                            System.out.println("Message " + chatMessage.getContent() + " contains " + finishMessage + ". Sending LOW to Arduino");
+                            writeToOutputStream(outputStream, "LOW");
+                            return;
+                        }
+                    }
+                    System.out.println("Message " + chatMessage.getContent() + " contains no deploy starting nor finish message. Ignoring that message.");
                 }
             }
         }
